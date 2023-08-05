@@ -1,0 +1,20 @@
+{
+  "name": "pucklineexpress.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "homepage": ".",
+  "scripts": {
+    "build": "cp -r src/* build/ && cp -r videos build/ && cp CNAME build/ && npx tailwindcss -o build/styles.css --minify && rm build/input.css",
+    "clean": "rm -rf build/*",
+    "deploy": "gh-pages -d build",
+    "watch": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gh-pages": "^5.0.0",
+    "tailwindcss": "^3.3.3"
+  }
+}
