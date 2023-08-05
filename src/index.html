@@ -5,18 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="/dist/output.css" rel="stylesheet">
 </head>
-<body class="bg-gray-600">
+<body>
   <header class="relative flex items-center justify-center h-screen overflow-hidden">
     <div class="relative p-5 text-white text-center">
-        <h1 class="text-4xl md:text-6xl m-2" style="color:white; mix-blend-mode:difference">Puck Line Express</h1>
-        <h4 class="text-2xl" style="color:white; mix-blend-mode:difference">Your #1 destination for NHL sports betting, wisdom, and winning picks!</h4>
+        <h1 class="text-4xl md:text-6xl m-2">Puck Line Express</h1>
+        <h4 class="text-2xl">Your #1 destination for NHL sports betting, wisdom, and winning picks!</h4>
     </div>
-    <div class="absolute bottom-10 text-white text-2xl text-center" style="color:white; mix-blend-mode:difference">
+    <div class="absolute bottom-10 text-white text-2xl text-center">
         Scroll
         <br>
         &darr;
     </div>
-    <video playsinline autoplay loop muted class="absolute -z-10 w-auto min-w-full min-h-full max-w-none">
+    <div class="absolute -z-10 w-auto min-w-full min-h-full max-w-none bg-black bg-opacity-60">
+  
+    </div>
+    <video playsinline autoplay loop muted class="absolute -z-20 w-auto min-w-full min-h-full max-w-none">
         <source src="/videos/background-video.mp4" type="video/mp4" />
         Your browser does not support the video tag.
     </video>
@@ -24,12 +27,60 @@
 
   <div class="max-w-6xl m-auto p-4">
     <div class="m-4">
-      <div class="text-center">
-        <div class="bg-white rounded-lg">
-          <h2 class="text-3xl font-bold underline ">Sign Up</h2>
-          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfvxFV8RYLUxp_CQKxs3_GU7XLcXh3mkNME4Cqj_5m5uh7nUg/viewform?embedded=true" width="100%" height="1200" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+      <section class="text-center">
+        <h2 class="text-5xl underline italic my-4"><b>Pricing</b></h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-center text-white">
+          <div class="shadow-black shadow-lg rounded-xl">
+            <a href="https://www.pucklineexpress.com/app">
+              <div class="rounded-t-xl bg-amber-700 text-3xl">1 Month</div>
+              <img src="/images/puck-line-express-logo.jpeg">
+              <div class="rounded-b-xl bg-amber-700 text-2xl">
+                <div>
+                  <span class="line-through">$50</span>
+                  <span class="text-green-400"> $25</span>
+                </div>
+                <p class="text-green-400"> Limited Time Offer!</p>
+              </div>
+            </a>
+          </div>
+          <div class="shadow-black shadow-lg rounded-xl">
+            <a href="https://www.pucklineexpress.com/app">
+              <div class="rounded-t-xl bg-gray-500 text-3xl">3 Months</div>
+              <img src="/images/puck-line-express-logo.jpeg">
+              <div class="rounded-b-xl bg-gray-500 text-2xl">
+                <div>
+                  <span class="line-through">$120</span>
+                  <span class="text-green-400"> $60</span>
+                </div>
+                <p class="text-green-400"> Limited Time Offer!</p>
+              </div>
+            </a>
+          </div>
+          <div class="shadow-black shadow-lg rounded-xl">
+            <a href="https://www.pucklineexpress.com/app">
+              <div class="rounded-t-xl bg-yellow-300 bg-opacity-90 text-3xl">6 Months</div>
+              <img src="/images/puck-line-express-logo.jpeg">
+              <div class="rounded-b-xl bg-yellow-300 bg-opacity-90 text-2xl">
+                <div>
+                  <span class="line-through">$200</span>
+                  <span class="text-green-400"> $100</span>
+                </div>
+                <p class="text-green-400"> Limited Time Offer!</p>
+              </div>
+            </a>
+          </div>
         </div>
-      </div>
+        <div class="my-8 text-center text-white">
+          <a class="text-4xl p-4 bg-green-500 rounded-2xl hover:bg-white hover:text-green-500 hover:border-green-500 hover:border-2" href="https://www.pucklineexpress.com/app">Sign Up</a>
+        </div>
+      </section>
+      
+      <div class="h-1 bg-black text-center rounded-sm"></div>
+
+      <section class="text-center">
+        <h2 class="text-5xl my-8"><b>Support</b></h2>
+        <a class="text-xl bg-black text-white p-2 rounded-xl hover:bg-white hover:border-2 hover:border-black hover:text-black" href="mailto:support@pucklineexpress.com">Contact Us</a>
+      </section>
     </div>
   </div>
 </body>
