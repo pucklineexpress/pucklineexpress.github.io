@@ -5,7 +5,7 @@
   "main": "index.js",
   "homepage": ".",
   "scripts": {
-    "build": "cp -r src/* build/ && cp -r videos build/ && cp -r images build/ && cp CNAME build/ && npx tailwindcss -o build/styles.css --minify && rm build/input.css",
+    "build": "cp -r src/* build/ && cp -r videos build/ && cp -r images build/ && cp CNAME build/ && npx tailwindcss -o build/styles.css --minify && rm build/input.css && node replace.js",
     "clean": "rm -rf build/*",
     "deploy": "gh-pages -d build",
     "watch": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
@@ -15,6 +15,7 @@
   "license": "ISC",
   "devDependencies": {
     "gh-pages": "^5.0.0",
+    "replace-in-file": "^7.0.1",
     "tailwindcss": "^3.3.3"
   }
 }
